@@ -1,0 +1,207 @@
+.test {
+    background: #FFFFFF;
+    box-shadow: 0 3px 5px rgba(205, 205, 205, 0.2);
+    border-radius: 2px;
+}
+
+.test__wrapper {
+    padding-left: 30px;
+    position: relative;
+    &:first-of-type::after {
+        content: '';
+        position: absolute;
+        border-bottom: 4px solid #f8f8f8;
+        width: 100%;
+        height: 4px;
+        left: 0;
+    }
+}
+
+.test__select {
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 35px;
+    label {
+        color: $c-black-0;
+        font-size: rem-calc(14);
+        line-height: rem-calc(17);
+        margin-bottom: 9px;
+        display: block;
+        &::after {
+            content: ' *';
+            color: $c-red-0;
+        }
+    }
+    select {
+        max-width: 368px;
+        width: 100%;
+        display: block;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 2px;
+        font-size: rem-calc(14);
+        line-height: rem-calc(17);
+        color: #3f3f3f;
+        padding: 12px 15px;
+        appearance: none;
+        background: url("../img/icons/polygon.svg") no-repeat 96%;
+    }
+}
+
+.test__title {
+    margin: 0 0 29px;
+    padding-top: 43px;
+    color: $c-black-0;
+    font-size: rem-calc(18);
+    line-height: rem-calc(22);
+}
+
+.test__slide-title {
+    margin: 0 0 18px;
+    color: #cdcdcd;
+    font-size: rem-calc(14);
+    line-height: rem-calc(17);
+}
+
+.test__button {
+    position: absolute;
+    content: '';
+    bottom: -66px;
+    right: 0;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    background: $c-grey-0;
+    color: $c-white-0;
+    border-radius: 2px;
+    padding: 12px 22px;
+    transition: .5s;
+    cursor: not-allowed;
+    svg {
+        transition: .5s;
+        position: absolute;
+        right: -100%;
+        fill: #fff;
+    }
+}
+
+.test__button_active {
+    cursor: pointer;
+    pointer-events: all;
+    background: #006399;
+    padding-right: 48px;
+    svg {
+        right: 18px;
+    }
+}
+
+.test__slide-answers {
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+    label {
+        margin-bottom: 15px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 14px;
+            left: -26px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #E5E5E5;
+            box-sizing: border-box;
+            border-radius: 100%;
+            transition: .5s;
+        }
+
+    }
+    input {
+        appearance: none;
+        &:checked + label::after {
+            transition: .5s;
+            border-color: #006399;
+        }
+        &:checked + label::before {
+            transition: .5s;
+            position: absolute;
+            content: '';
+            background: #006399;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            top: 50%;
+            left: -23px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.test__submit {
+    position: absolute;
+    content: '';
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    background: $c-grey-0;
+    color: $c-white-0;
+    border-radius: 2px;
+    padding: 12px 22px;
+    transition: .5s;
+    bottom: -190%;
+    right: 10px;
+
+    cursor: pointer;
+    pointer-events: all;
+    background: #006399;
+}
+
+.slider-fraction {
+    display: flex;
+    color: #3f3f3f;
+    font-size: rem-calc(13);
+    line-height: rem-calc(15);
+    position: absolute;
+    top: 8px;
+    right: -48px;
+}
+
+/* Progress */
+.swiper-pagination-progressbar {
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    top: 30px;
+    right: -53px;
+    .swiper-pagination-progressbar-fill {
+        background: $c-green-0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transform-origin: left top;
+    }
+    .swiper-container-rtl & .swiper-pagination-progressbar-fill {
+        transform-origin: right top;
+    }
+    .swiper-container-horizontal > &,
+    .swiper-container-vertical > &.swiper-pagination-progressbar-opposite {
+        width: 100%;
+        height: 4px;
+        left: 0;
+        top: 0;
+    }
+    .swiper-container-vertical > &,
+    .swiper-container-horizontal > &.swiper-pagination-progressbar-opposite {
+        width: 4px;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}

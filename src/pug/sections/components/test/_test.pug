@@ -1,0 +1,95 @@
+section.test(style='width: 1060px; margin: 0 auto;')
+    .test__wrapper
+        .test__select
+            label(for='level') Выберите уровень подготовки
+            select(id='level' name='level' required=true)
+                option(value='Россия') Россия
+                option(value='США') США
+                option(value='Китай') Китай
+        .slider-fraction
+            .slider-current 0
+            .slider-separator /
+            .slider-total 0
+        .swiper-pagination
+    .test__wrapper
+        h3.test__title Делать вырезки из различных текстов и группировать их по определенному признаку.
+        form.test__form
+            .test__slider.swiper-container
+                .swiper-wrapper
+                    .swiper-slide.test__slide
+                        .test__slide-group
+                            h5.test__slide-title Оцениваете насколько хорошо Вы умеете
+                            .test__slide-answers
+                                input(id="1-0" required=true name='Название вопроса 1' type='radio' value='2' data-answer='Первый ответ на вопрос 1')
+                                label(for='1-0') делаю, как правило, хорошо
+                                input(id="1-1" required=true name='Название вопроса 1' type='radio' value='1' data-answer='Второй ответ на вопрос 1')
+                                label(for='1-1') делаю плохо, совсем не умею, никогда не делал
+                                input(id="1-2" required=true name='Название вопроса 1' type='radio' value='0' data-answer='Третий ответ на вопрос 1')
+                                label(for='1-2') делаю средне
+                        .test__slide-group
+                            h5.test__slide-title Оцениваете ощущения
+                            .test__slide-answers
+                                input(id='1' required=true name='Название вопроса 1-1' type='radio' value='2' data-answer='Первый ответ на вопрос 1-1')
+                                label(for="1") положительные (интересно, легко)
+                                input(id='2' required=true name='Название вопроса 1-1' type='radio' value='1' data-answer='Второй ответ на вопрос 1-1')
+                                label(for="2") нейтральные (все равно)
+                                input(id='3' required=true name='Название вопроса 1-1' type='radio' value='0' data-answer='Третий ответ на вопрос 1-1')
+                                label(for="3") отрицательные (неинтересно, трудно)
+                        .test__slide-group
+                            h5.test__slide-title Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу
+                            .test__slide-answers
+                                input(id="111" required=true name='Название вопроса 1-2' type='radio' value='2' data-answer='Первый ответ на вопрос 1-2')
+                                label(for="111") да
+                                input(id="222" required=true name='Название вопроса 1-2' type='radio' value='1' data-answer='Второй ответ на вопрос 1-2')
+                                label(for="222") все равно
+                                input(id="333" required=true name='Название вопроса 1-2' type='radio' value='0' data-answer='Третий ответ на вопрос 1-2')
+                                label(for="333") нет
+                    .swiper-slide.test__slide
+                        .test__slide-group
+                            h5.test__slide-title Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу
+                            .test__slide-answers
+                                input(id="0" required=true name='Название вопроса 1-2' type='radio' value='2' data-answer='Первый ответ на вопрос 1-2')
+                                label(for="0") да
+                                input(id="00" required=true name='Название вопроса 1-2' type='radio' value='1' data-answer='Второй ответ на вопрос 1-2')
+                                label(for="00") все равно
+                                input(id="000" required=true name='Название вопроса 1-2' type='radio' value='0' data-answer='Третий ответ на вопрос 1-2')
+                                label(for="000") нет
+                                input(id="00000" required=true name='Название вопроса 1-2' type='radio' value='0' data-answer='Третий ответ на вопрос 1-2')
+                                label(for="00000") нет
+                                input(id="0000" required=true name='Название вопроса 1-2' type='radio' value='0' data-answer='Третий ответ на вопрос 1-2')
+                                label(for="0000") нет
+                    .swiper-slide.test__slide
+                        .test__slide-group
+                            h5.test__slide-title Оцениваете насколько хорошо Вы умеете
+                            .test__slide-answers
+                                input(id="2-0" required=true name='Название вопроса 2' type='radio' value='2' data-answer='Первый ответ на вопрос 1')
+                                label(for='2-0') делаю, как правило, хорошо
+                                input(id="2-1" required=true name='Название вопроса 2' type='radio' value='1' data-answer='Второй ответ на вопрос 1')
+                                label(for='2-1') делаю плохо, совсем не умею, никогда не делал
+                                input(id="2-2" required=true name='Название вопроса 2' type='radio' value='0' data-answer='Третий ответ на вопрос 1')
+                                label(for='2-2') делаю средне
+                        .test__slide-group
+                            h5.test__slide-title Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу
+                            .test__slide-answers
+                                input(id='11' required=true name='Название вопроса 3-2' type='radio' value='2' data-answer='Первый ответ на вопрос 1-2')
+                                label(for='11') да
+                                input(id="22" required=true name='Название вопроса 3-2' type='radio' value='1' data-answer='Второй ответ на вопрос 1-2')
+                                label(for="22") все равно
+                                input(id="44" required=true name='Название вопроса 3-2' type='radio' value='0' data-answer='Третий ответ на вопрос 1-2')
+                                label(for="44") нет
+                    .swiper-slide.test__slide_last
+                        .test__slide-group
+                            h5.test__slide-title Оцениваете насколько хорошо Вы умеете
+                            .test__slide-answers
+                                input(id="1111" required=true name='Название вопроса 4' type='radio' value='2' data-answer='Первый ответ на вопрос 1')
+                                label(for="1111") делаю, как правило, хорошо
+                                input(id="2222" required=true name='Название вопроса 4' type='radio' value='1' data-answer='Второй ответ на вопрос 1')
+                                label(for="2222") делаю плохо, совсем не умею, никогда не делал
+                                input(id="3333" required=true name='Название вопроса 4' type='radio' value='0' data-answer='Третий ответ на вопрос 1')
+                                label(for="3333") делаю средне
+                        button(type='button').test__submit Отправить
+            button.swiper-button-next.test__button.test__button_next(disabled=true) Далее
+                svg(width='11' height='8')
+                    use(href="#arrow-icon")
+
+

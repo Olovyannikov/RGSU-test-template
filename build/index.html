@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Главная</title>
+  </head>
+  <body><?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 11 8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style><svg viewBox="0 0 11 8" id="arrow-icon" xmlns="http://www.w3.org/2000/svg"><path d="M10.354 4.354a.5.5 0 000-.708L7.172.464a.5.5 0 10-.708.708L9.293 4 6.464 6.828a.5.5 0 10.708.708l3.182-3.182zM0 4.5h10v-1H0v1z"/></svg><svg viewBox="0 0 10 8" id="polygon" xmlns="http://www.w3.org/2000/svg"><path d="M5.822 6.814a1 1 0 01-1.644 0L.891 2.07A1 1 0 011.713.5h6.574a1 1 0 01.822 1.57L5.822 6.813z"/></svg></svg>
+    <main class="main">
+      <section class="test" style="width: 1060px; margin: 0 auto;">
+        <div class="test__wrapper">
+          <div class="test__select">
+            <label for="level">Выберите уровень подготовки</label>
+            <select id="level" name="level" required="required">
+              <option value="Россия">Россия</option>
+              <option value="США">США</option>
+              <option value="Китай">Китай</option>
+            </select>
+          </div>
+          <div class="slider-fraction">
+            <div class="slider-current">0</div>
+            <div class="slider-separator">/</div>
+            <div class="slider-total">0</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="test__wrapper">
+          <h3 class="test__title">Делать вырезки из различных текстов и группировать их по определенному признаку.</h3>
+          <form class="test__form">
+            <div class="test__slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide test__slide">
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Оцениваете насколько хорошо Вы умеете</h5>
+                    <div class="test__slide-answers">
+                      <input id="1-0" required="required" name="Название вопроса 1" type="radio" value="2" data-answer="Первый ответ на вопрос 1"/>
+                      <label for="1-0">делаю, как правило, хорошо</label>
+                      <input id="1-1" required="required" name="Название вопроса 1" type="radio" value="1" data-answer="Второй ответ на вопрос 1"/>
+                      <label for="1-1">делаю плохо, совсем не умею, никогда не делал</label>
+                      <input id="1-2" required="required" name="Название вопроса 1" type="radio" value="0" data-answer="Третий ответ на вопрос 1"/>
+                      <label for="1-2">делаю средне</label>
+                    </div>
+                  </div>
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Оцениваете ощущения</h5>
+                    <div class="test__slide-answers">
+                      <input id="1" required="required" name="Название вопроса 1-1" type="radio" value="2" data-answer="Первый ответ на вопрос 1-1"/>
+                      <label for="1">положительные (интересно, легко)</label>
+                      <input id="2" required="required" name="Название вопроса 1-1" type="radio" value="1" data-answer="Второй ответ на вопрос 1-1"/>
+                      <label for="2">нейтральные (все равно)</label>
+                      <input id="3" required="required" name="Название вопроса 1-1" type="radio" value="0" data-answer="Третий ответ на вопрос 1-1"/>
+                      <label for="3">отрицательные (неинтересно, трудно)</label>
+                    </div>
+                  </div>
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу</h5>
+                    <div class="test__slide-answers">
+                      <input id="111" required="required" name="Название вопроса 1-2" type="radio" value="2" data-answer="Первый ответ на вопрос 1-2"/>
+                      <label for="111">да</label>
+                      <input id="222" required="required" name="Название вопроса 1-2" type="radio" value="1" data-answer="Второй ответ на вопрос 1-2"/>
+                      <label for="222">все равно</label>
+                      <input id="333" required="required" name="Название вопроса 1-2" type="radio" value="0" data-answer="Третий ответ на вопрос 1-2"/>
+                      <label for="333">нет</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide test__slide">
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу</h5>
+                    <div class="test__slide-answers">
+                      <input id="0" required="required" name="Название вопроса 1-2" type="radio" value="2" data-answer="Первый ответ на вопрос 1-2"/>
+                      <label for="0">да</label>
+                      <input id="00" required="required" name="Название вопроса 1-2" type="radio" value="1" data-answer="Второй ответ на вопрос 1-2"/>
+                      <label for="00">все равно</label>
+                      <input id="000" required="required" name="Название вопроса 1-2" type="radio" value="0" data-answer="Третий ответ на вопрос 1-2"/>
+                      <label for="000">нет</label>
+                      <input id="00000" required="required" name="Название вопроса 1-2" type="radio" value="0" data-answer="Третий ответ на вопрос 1-2"/>
+                      <label for="00000">нет</label>
+                      <input id="0000" required="required" name="Название вопроса 1-2" type="radio" value="0" data-answer="Третий ответ на вопрос 1-2"/>
+                      <label for="0000">нет</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide test__slide">
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Оцениваете насколько хорошо Вы умеете</h5>
+                    <div class="test__slide-answers">
+                      <input id="2-0" required="required" name="Название вопроса 2" type="radio" value="2" data-answer="Первый ответ на вопрос 1"/>
+                      <label for="2-0">делаю, как правило, хорошо</label>
+                      <input id="2-1" required="required" name="Название вопроса 2" type="radio" value="1" data-answer="Второй ответ на вопрос 1"/>
+                      <label for="2-1">делаю плохо, совсем не умею, никогда не делал</label>
+                      <input id="2-2" required="required" name="Название вопроса 2" type="radio" value="0" data-answer="Третий ответ на вопрос 1"/>
+                      <label for="2-2">делаю средне</label>
+                    </div>
+                  </div>
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Хотели бы Вы, чтобы описанное в вопросе действие входило в Вашу работу</h5>
+                    <div class="test__slide-answers">
+                      <input id="11" required="required" name="Название вопроса 3-2" type="radio" value="2" data-answer="Первый ответ на вопрос 1-2"/>
+                      <label for="11">да</label>
+                      <input id="22" required="required" name="Название вопроса 3-2" type="radio" value="1" data-answer="Второй ответ на вопрос 1-2"/>
+                      <label for="22">все равно</label>
+                      <input id="44" required="required" name="Название вопроса 3-2" type="radio" value="0" data-answer="Третий ответ на вопрос 1-2"/>
+                      <label for="44">нет</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide test__slide_last">
+                  <div class="test__slide-group">
+                    <h5 class="test__slide-title">Оцениваете насколько хорошо Вы умеете</h5>
+                    <div class="test__slide-answers">
+                      <input id="1111" required="required" name="Название вопроса 4" type="radio" value="2" data-answer="Первый ответ на вопрос 1"/>
+                      <label for="1111">делаю, как правило, хорошо</label>
+                      <input id="2222" required="required" name="Название вопроса 4" type="radio" value="1" data-answer="Второй ответ на вопрос 1"/>
+                      <label for="2222">делаю плохо, совсем не умею, никогда не делал</label>
+                      <input id="3333" required="required" name="Название вопроса 4" type="radio" value="0" data-answer="Третий ответ на вопрос 1"/>
+                      <label for="3333">делаю средне</label>
+                    </div>
+                  </div>
+                  <button class="test__submit" type="button">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-button-next test__button test__button_next" disabled="disabled">Далее
+              <svg width="11" height="8">
+                <use href="#arrow-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.min.js" type="module"></script>
+  </body>
+</html>
