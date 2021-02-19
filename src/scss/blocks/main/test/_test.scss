@@ -2,6 +2,10 @@
     background: #FFFFFF;
     box-shadow: 0 3px 5px rgba(205, 205, 205, 0.2);
     border-radius: 2px;
+    padding: 0 20px;
+    @media (min-width: 1200px) {
+        padding: 0;
+    }
 }
 
 .test__wrapper {
@@ -119,6 +123,7 @@
     }
     input {
         appearance: none;
+        display: none;
         &:checked + label::after {
             transition: .5s;
             border-color: #006399;
@@ -164,7 +169,11 @@
     line-height: rem-calc(15);
     position: absolute;
     top: 8px;
-    right: -48px;
+    right: 10px;
+    @media (min-width: 1200px) {
+        top: 8px;
+        right: -48px;
+    }
 }
 
 /* Progress */
@@ -172,11 +181,19 @@
     background: rgba(0, 0, 0, 0.25);
     position: absolute;
     content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: block;
-    width: 40px;
     height: 2px;
-    top: 30px;
-    right: -53px;
+
+    @media (min-width: 1200px) {
+        bottom: unset;
+        left: unset;
+        width: 40px;
+        top: 30px;
+        right: -53px;
+    }
     .swiper-pagination-progressbar-fill {
         background: $c-green-0;
         position: absolute;

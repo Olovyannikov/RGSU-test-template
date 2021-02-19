@@ -564,6 +564,7 @@ img {
   -webkit-box-shadow: 0 3px 5px rgba(205, 205, 205, 0.2);
           box-shadow: 0 3px 5px rgba(205, 205, 205, 0.2);
   border-radius: 2px;
+  padding: 0 20px;
 }
 
 .test__wrapper {
@@ -713,6 +714,7 @@ img {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  display: none;
 }
 
 .test__slide-answers input:checked + label::after {
@@ -772,7 +774,7 @@ img {
   line-height: 0.9375rem;
   position: absolute;
   top: 8px;
-  right: -48px;
+  right: 10px;
 }
 
 /* Progress */
@@ -781,11 +783,11 @@ img {
   background: rgba(0, 0, 0, 0.25);
   position: absolute;
   content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: block;
-  width: 40px;
   height: 2px;
-  top: 30px;
-  right: -53px;
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
@@ -836,6 +838,25 @@ img {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .test {
+    padding: 0;
+  }
+
+  .slider-fraction {
+    top: 8px;
+    right: -48px;
+  }
+
+  .swiper-pagination-progressbar {
+    bottom: unset;
+    left: unset;
+    width: 40px;
+    top: 30px;
+    right: -53px;
   }
 }
 
