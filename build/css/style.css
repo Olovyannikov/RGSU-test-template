@@ -627,7 +627,7 @@ img {
 }
 
 .test__slide-title {
-  margin: 0 0 18px;
+  margin: 0;
   color: #cdcdcd;
   font-size: 0.875rem;
   line-height: 1.0625rem;
@@ -664,17 +664,6 @@ img {
   fill: #fff;
 }
 
-.test__button_active {
-  cursor: pointer;
-  pointer-events: all;
-  background: #006399;
-  padding-right: 48px;
-}
-
-.test__button_active svg {
-  right: 18px;
-}
-
 .test__slide-answers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,8 +676,10 @@ img {
 }
 
 .test__slide-answers label {
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .test__slide-answers label::after {
@@ -708,6 +699,10 @@ img {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
+}
+
+.test__slide-answers label:nth-of-type(2) {
+  padding: 0;
 }
 
 .test__slide-answers input {
@@ -825,6 +820,17 @@ img {
   height: 100%;
   left: 0;
   top: 0;
+}
+
+.test__button_active {
+  cursor: pointer;
+  pointer-events: all;
+  background: #006399;
+  padding-right: 48px;
+}
+
+.test__button_active svg {
+  right: 18px;
 }
 
 @media screen and (min-width: 992px) {

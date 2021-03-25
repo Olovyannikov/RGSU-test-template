@@ -11,6 +11,7 @@
 .test__wrapper {
     padding-left: 30px;
     position: relative;
+
     &:first-of-type::after {
         content: '';
         position: absolute;
@@ -25,17 +26,20 @@
     position: relative;
     padding-top: 46px;
     padding-bottom: 35px;
+
     label {
         color: $c-black-0;
         font-size: rem-calc(14);
         line-height: rem-calc(17);
         margin-bottom: 9px;
         display: block;
+
         &::after {
             content: ' *';
             color: $c-red-0;
         }
     }
+
     select {
         max-width: 368px;
         width: 100%;
@@ -61,7 +65,7 @@
 }
 
 .test__slide-title {
-    margin: 0 0 18px;
+    margin: 0;
     color: #cdcdcd;
     font-size: rem-calc(14);
     line-height: rem-calc(17);
@@ -81,6 +85,7 @@
     padding: 12px 22px;
     transition: .5s;
     cursor: not-allowed;
+
     svg {
         transition: .5s;
         position: absolute;
@@ -89,23 +94,16 @@
     }
 }
 
-.test__button_active {
-    cursor: pointer;
-    pointer-events: all;
-    background: #006399;
-    padding-right: 48px;
-    svg {
-        right: 18px;
-    }
-}
-
 .test__slide-answers {
     display: flex;
     flex-direction: column;
     padding-left: 26px;
+
     label {
-        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         position: relative;
+        cursor: pointer;
         &::after {
             position: absolute;
             content: '';
@@ -120,14 +118,20 @@
             transition: .5s;
         }
 
+        &:nth-of-type(2) {
+            padding: 0;
+        }
     }
+
     input {
         appearance: none;
         display: none;
+
         &:checked + label::after {
             transition: .5s;
             border-color: #006399;
         }
+
         &:checked + label::before {
             transition: .5s;
             position: absolute;
@@ -194,6 +198,7 @@
         top: 30px;
         right: -53px;
     }
+
     .swiper-pagination-progressbar-fill {
         background: $c-green-0;
         position: absolute;
@@ -204,9 +209,11 @@
         transform: scale(0);
         transform-origin: left top;
     }
+
     .swiper-container-rtl & .swiper-pagination-progressbar-fill {
         transform-origin: right top;
     }
+
     .swiper-container-horizontal > &,
     .swiper-container-vertical > &.swiper-pagination-progressbar-opposite {
         width: 100%;
@@ -214,11 +221,23 @@
         left: 0;
         top: 0;
     }
+
     .swiper-container-vertical > &,
     .swiper-container-horizontal > &.swiper-pagination-progressbar-opposite {
         width: 4px;
         height: 100%;
         left: 0;
         top: 0;
+    }
+}
+
+.test__button_active {
+    cursor: pointer;
+    pointer-events: all;
+    background: #006399;
+    padding-right: 48px;
+
+    svg {
+        right: 18px;
     }
 }

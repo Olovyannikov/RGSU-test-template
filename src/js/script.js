@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
             i.querySelectorAll('input').forEach(radio => {
                 radio.addEventListener('click', () => {
                     acc++;
-                    i.querySelectorAll('input').forEach(q => q.setAttribute('disabled', 'disabled'))
+                    //i.querySelectorAll('input').forEach(q => q.setAttribute('disabled', 'disabled'))
                     if (acc >= answerItem.length) {
                         testBtn.removeAttribute('disabled')
                         testBtn.classList.add('test__button_active');
